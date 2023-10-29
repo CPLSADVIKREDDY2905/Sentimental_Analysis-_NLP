@@ -18,8 +18,10 @@ if st.button('PREDICT'):
     a = model.predict([message])[0]
     if(a == 'pos'):
         disp = "Positive Sentiment!"
-    else(a == 'neg'):
+    elif(a == 'neg'):
         disp = "Negative Sentiment!"
+    else:
+        disp = "neither negative nor positive sentiment!"
     
-    st.write('The sentiment of given text is:', disp)
+st.write('The sentiment of given text is:', disp)
     
