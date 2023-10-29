@@ -2,4 +2,4 @@
 
 Check it out at:
 <br/>
-:globe_with_meridians: https://chai1323-sentiment-analysis-nlp-sa2-v0x309.streamlit.app/
+:globe_with_meridians:https://sentimentalanalysisnlp-fin9kxdhc3m8yyuxjdzdp5.streamlit.app/
