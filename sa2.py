@@ -20,8 +20,7 @@ if st.button('PREDICT'):
         disp = "Positive Sentiment!"
     elif(a == 'neg'):
         disp = "Negative Sentiment!"
-    else:
-        disp = "neither negative nor positive sentiment!"
     
-st.write('The sentiment of given text is:', disp)
+    
+    st.write('The sentiment of given text is:', disp)
     
