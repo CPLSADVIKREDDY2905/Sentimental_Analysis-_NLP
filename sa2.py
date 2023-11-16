@@ -14,13 +14,14 @@ st.title(' Sentiment Analysis Model ')
 st.write('Enter text for sentiment analysis:')
 message = st.text_area("","Type Here ...")
 if st.button('PREDICT'):
-    disp=" "
-    a = model.predict([message])[0]
-    if(a == 'pos'):
-        disp = "Positive Sentiment!"
-    elif(a == 'neg'):
-        disp = "Negative Sentiment!"
-    
-    
-    st.write('The sentiment of given text is:', disp)
+    if message.strip():
+        disp=" "
+        a = model.predict([message])[0]
+        if a == 'pos':
+            disp = "Positive Sentiment!"
+        elif a == 'neg':
+            disp = "Negative Sentiment!"
+        st.write('The sentiment of given text is:', disp)
+    else:
+        st.write('please enter the statement before clicking "predict" button')
     
